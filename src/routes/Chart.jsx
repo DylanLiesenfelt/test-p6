@@ -26,7 +26,7 @@ const Chart = ({ticker}) => {
         const getChartData = async () => {
           try {
             const { period, interval } = timeframes[timeframe];
-            const response = await fetch(`http://localhost:5000/api/chartData?ticker=${ticker}&period=${period}&interval=${interval}`);
+            const response = await fetch(`https://test-p6.onrender.com/api/chartData?ticker=${ticker}&period=${period}&interval=${interval}`);
             const data = await response.json();
       
             setChartData({

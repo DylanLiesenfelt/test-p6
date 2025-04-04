@@ -8,7 +8,7 @@ const News = ({ticker}) => {
     useEffect(() => {
         const getNewsFeed = async () => {
             try {
-                const response = await fetch (`http://localhost:5000/api/newsfeed?ticker=${ticker}`)
+                const response = await fetch (`https://test-p6.onrender.com/api/newsfeed?ticker=${ticker}`)
                 const data = await response.json();
                 setNews(data)
 

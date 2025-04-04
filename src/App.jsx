@@ -1,7 +1,6 @@
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import List from './routes/List'
 import Chart from './routes/Chart';
-import Fundamentals from './routes/Compare';
 import News from './routes/News';
 import './App.css'
 import { useState } from 'react';

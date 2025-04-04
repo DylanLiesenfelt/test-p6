@@ -59,7 +59,6 @@ def getNewsFeed():
         try:
             thumbnail = block['thumbnail']['originalUrl']
         except(KeyError, TypeError):
-            print(f'Story {block['title']} has no thumbnail')
             thumbnail = 'https://s.yimg.com/uu/api/res/1.2/bZ_kOPsxtZ48a0BlxMGOTw--~B/Zmk9c3RyaW07aD0xOTA7cT05NTt3PTI1MDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-11/40621510-496f-11ec-bade-b5da9b9bb6b2'
             
         story = {

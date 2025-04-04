@@ -22,7 +22,7 @@ const Compare = ({ticker}) => {
   useEffect(() => {
     const getChartData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/compare?ticker1=${ticker1}&ticker2=${ticker2}`);
+        const response = await fetch(`https://test-p6.onrender.com/api/compare?ticker1=${ticker1}&ticker2=${ticker2}`);
         const data = await response.json();
         const labels = data.stock1.dates;
         const chart = {
