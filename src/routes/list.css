@@ -1,0 +1,90 @@
+#list-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#list-header {
+    border-radius: 0.3rem 0.3rem 0 0;
+    width: 100%;
+    height: 10%;
+    box-shadow: none;
+    text-shadow: 0 0 5px black;
+}
+  
+#list-header h3 {
+    margin-left: 1rem;
+}
+
+#filters {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 1rem;
+}
+  
+#filters label {
+    color: white;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
+    width: 50%;
+}
+  
+#filters select {
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    border: none;
+    width: 50%;
+}
+  
+#list-container ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: center;
+}
+  
+#list-container li {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+    width: 10%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.3rem;
+    font-size: 0.8vw;
+    text-wrap: wrap;
+    text-align: center;
+    min-height: 60px;
+    max-height: 150px;
+}
+
+  
+#list-container li:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+  
+#list-container li:hover {
+    color: white;
+    text-shadow: 0 0 7px black;
+    background-color: #117caa;
+    cursor: pointer;
+}
+  

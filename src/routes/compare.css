@@ -1,0 +1,23 @@
+#compare-container {
+    height: 100%;
+    width: 100%;
+}
+
+#compare-header {
+    border-radius: 0.3rem 0.3rem 0 0;
+    padding: 0 1%;
+    width: auto;
+    box-shadow: none;
+    text-shadow: 0 0 5px black;
+}
+
+.dropdowns {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dropdowns select {
+
+}
